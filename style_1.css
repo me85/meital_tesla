@@ -10,6 +10,7 @@
   max-width: 100%;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 .tesla-image2 {
   background: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero");
@@ -19,6 +20,7 @@
   max-width: 100%;
   position: relative;
   box-sizing: border-box;
+  z-index: auto;
 }
 .tesla-image3 {
   background: url("./assets/img/Model3_04.jpg");
@@ -28,6 +30,7 @@
   max-width: 100%;
   position: relative;
   box-sizing: border-box;
+  z-index: auto;
 }
 .conteiner-1 {
   margin: 0 auto; /* This centers the page in modern browsers */
@@ -38,7 +41,6 @@
 .header {
   width: 960px;
   height: 300px;
-  border: 2px solid red;
 }
 #tesla_logo {
   height: 125px;
@@ -76,7 +78,7 @@ li a {
   font-size: 14px;
 }
 
-li:hover
+.navbar_1 .navbar_2 li:hover
 /* button style on-mouse-over */ {
   border: none;
   padding: 4px 2px;
@@ -97,13 +99,11 @@ li:hover
 
 #sideBarLeft {
   float: left;
-  border: 2px solid red;
   top: 30%;
   left: -0.5px;
   height: 70px;
   list-style-type: none;
-  width: 10%;
-  background-color: #f1f1f1;
+  width: 12%;
   /* overflow: auto; */
   position: fixed;
 }
@@ -117,18 +117,66 @@ li:hover
   background-color: #f1f1f1;
   position: fixed;
   height: 100%; */
-  display: -webkit-box;
-  list-style: none;
+  list-style-image: none;
 }
-#åulSideBarLeft li {
-  display: block;
-  padding: 15px;
+#ulSideBarLeft li {
+  display: inline-block;
+  padding: 0;
   height: 35px;
 }
+#ulSideBarLeft li a {
+  color: black;
+}
+
+#ulSideBarLeft li a span {
+  list-style-position: outside;
+  color: transparent;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+#ulSideBarLeft li :hover
+/* word showen on side bar on-mouse-over */ {
+  color: rgb(7, 7, 7);
+}
+
+/* #ulSideBarLeft li a :active {
+  text-decoration: red;
+} */
 
 .footer {
   clear: both; /* This makes sure that the footer clears both the sidebar and content floats */
   width: 960px; /* This sets the footer to stretch the full page width */
-  border: 2px solid red;
-  left: -30px;
+  text-align: center;
+  position: relative;
+  left: 400px;
+  top: 400px;
+}
+
+/* .inside_fotter {
+  width: 760px;
+} */
+
+.icon_speed {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background-color: blue;
+}
+
+.icon_km {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background-color: rgb(255, 0, 55);
+}
+.icon_AWD {
+  float: left;
+  width: 150px;
+  height: 100px;
+  background-color: rgb(200, 255, 0);
+}
+
+.btn_page1 {
+  float: left;
 }
